@@ -1,6 +1,7 @@
 # BINARY_TREE
 
 Tree has atmost 2 children id binary tree.
+/n
 formulas:
 maximum no. of nodes at level i = (2*i)
 maximum no. of nodes in a tree with height is = (2*h)-1
