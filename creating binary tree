@@ -1,0 +1,35 @@
+#include <bits/stdc++.h>
+using namespace std;
+class node{
+  public:
+  int data;
+  node *left,*right;
+  
+  node(int data){
+      this->data=data;
+      this->left=NULL;
+      this->right=NULL;
+  }
+};
+node* createTree(){
+    node *root=NULL;
+    int data;
+    
+    cin>>data;
+    if(data==-1) 
+    {
+        return NULL;
+    }
+    root=new node(data);
+    cout<<"left :"<<data<<endl;
+    root->left=createTree();
+    
+    cout<<"right :"<<data<<endl;
+    root->right=createTree();
+    
+    return root;
+}
+int main() {
+	createTree();
+	return 0;
+}
